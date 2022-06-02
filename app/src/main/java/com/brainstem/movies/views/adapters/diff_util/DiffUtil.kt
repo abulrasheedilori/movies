@@ -1,4 +1,4 @@
-package com.brainstem.movies.views.screens.adapters.diff_util
+package com.brainstem.movies.views.adapters.diff_util
 
 import androidx.recyclerview.widget.DiffUtil
 

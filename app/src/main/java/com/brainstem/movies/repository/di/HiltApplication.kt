@@ -1,4 +1,4 @@
-package com.brainstem.movies.repository.di.modules
+package com.brainstem.movies.repository.di
 
 import android.app.Application
 import dagger.hilt.android.HiltAndroidApp

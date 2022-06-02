@@ -33,15 +33,15 @@
             app:destination="@id/upcomingMovie" />
         <argument
             android:name="popularMovie"
-            app:argType="com.google.movies.models.popular_movies.Result"
+            app:argType="com.brainstem.movies.models.popular_movies.Result"
             app:nullable="true" />
         <argument
             android:name="upcomingMovie"
-            app:argType="com.google.movies.models.upcoming_movies.Result"
+            app:argType="com.brainstem.movies.models.upcoming_movies.Result"
             app:nullable="true" />
         <argument
             android:name="latestMovie"
-            app:argType="com.google.movies.models.latest_movies.LatestMovie"
+            app:argType="com.brainstem.movies.models.latest_movies.LatestMovie"
             app:nullable="true" />
     </fragment>
     <fragment

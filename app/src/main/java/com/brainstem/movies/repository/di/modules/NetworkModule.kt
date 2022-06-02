@@ -1,4 +1,4 @@
-package com.brainstem.movies.repository.di.modules.modules
+package com.brainstem.movies.repository.di.modules
 
 import com.brainstem.movies.repository.remote.GetMovieApi
 import com.brainstem.movies.utils.MOVIE_URL

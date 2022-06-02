@@ -1,4 +1,4 @@
-package com.brainstem.movies.repository.di.modules.modules
+package com.brainstem.movies.repository.di.modules
 
 import android.app.Application
 import androidx.room.Room

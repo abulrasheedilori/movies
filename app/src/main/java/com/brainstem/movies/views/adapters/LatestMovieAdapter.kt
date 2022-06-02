@@ -1,4 +1,4 @@
-package com.brainstem.movies.views.screens.adapters
+package com.brainstem.movies.views.adapters
 
 import android.annotation.SuppressLint
 import com.brainstem.movies.models.latest_movies.LatestMovie
@@ -6,7 +6,7 @@ import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
-import com.brainstem.movies.views.screens.adapters.click_listeners.OnMovieClickInterface
+import com.brainstem.movies.views.adapters.click_listeners.OnMovieClickInterface
 import com.brainstem.movies.utils.IMAGE_URL
 import com.brainstem.movies.databinding.MovieRecyclerviewItemBinding
 
