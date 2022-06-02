@@ -14,6 +14,7 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.brainstem.movies.BuildConfig.API_KEY
 import com.brainstem.movies.databinding.HomepageBinding
+import com.brainstem.movies.utils.LOAD_MORE_DATA
 import com.brainstem.movies.viewmodels.MovieViewModel
 import com.brainstem.movies.views.adapters.HomePageAdapter
 import com.brainstem.movies.views.adapters.click_listeners.OnMovieClickInterface
@@ -97,7 +98,7 @@ class Homepage : Fragment(), OnMovieClickInterface {
             else {
                 Toast.makeText(
                     requireContext(),
-                    "Your database is empty, Switch on your Internet",
+                    LOAD_MORE_DATA,
                     Toast.LENGTH_SHORT).show()
             }
         })
