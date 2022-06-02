@@ -7,7 +7,7 @@
 
     <fragment
         android:id="@+id/homepage"
-        android:name="com.google.movies.views.screens.Homepage"
+        android:name="com.brainstem.movies.views.screens.Homepage"
         android:label="Popular Movies"
         tools:layout="@layout/homepage">
 
@@ -18,7 +18,7 @@
     </fragment>
     <fragment
         android:id="@+id/movieDetails"
-        android:name="com.google.movies.views.screens.MovieDetailsScreen"
+        android:name="com.brainstem.movies.views.screens.MovieDetailsScreen"
         android:label="@string/movieDetails"
         tools:layout="@layout/movie_details">
 
@@ -46,7 +46,7 @@
     </fragment>
     <fragment
         android:id="@+id/upcomingMovie"
-        android:name="com.google.movies.views.screens.UpcomingMovie"
+        android:name="com.brainstem.movies.views.screens.UpcomingMovie"
         android:label="Upcoming Movies"
         tools:layout="@layout/fragment_upcoming_movie">
         <action
@@ -55,7 +55,7 @@
     </fragment>
     <fragment
         android:id="@+id/latestMovie"
-        android:name="com.google.movies.views.screens.LatestMovie"
+        android:name="com.brainstem.movies.views.screens.LatestMovie"
         android:label="Latest Movie"
         tools:layout="@layout/fragment_latest_movie">
         <action

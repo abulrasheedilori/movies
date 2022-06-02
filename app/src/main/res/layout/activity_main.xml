@@ -18,6 +18,8 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
+        app:navigationIcon="@drawable/ic_back_arrow"
+        android:background="@color/orange"
         app:title="Movies"
         app:navigationIconTint="@color/white"
         app:titleCentered="true" />
@@ -48,6 +50,7 @@
         app:elevation="10dp"
         android:background="#E1310A"
         app:itemIconTint="?android:attr/windowBackground"
+        app:menu="@menu/menu_main"
         app:itemTextColor="?android:attr/windowBackground"
         app:labelVisibilityMode="selected" />
 
