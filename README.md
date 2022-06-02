@@ -63,10 +63,18 @@ MOVIE DETAILS
 
 ![movie_details](https://user-images.githubusercontent.com/54009597/171627615-c7ef11c1-5178-4c30-aac6-7b8941c59c77.jpeg)
 
+                        -----------------
+                          API SOURCE
+                        -----------------
+                   TMDB : http://themoviedb.org/
+                              
+                              
+                              
+                          ------------
+                            LANGUAGE 
+                          ------------
+                           Kotlin
 
----------
-LANGUAGE : Kotlin 
----------
 
                         -------------
                         ARCHITECTURE: 
