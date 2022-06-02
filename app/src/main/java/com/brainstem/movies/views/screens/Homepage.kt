@@ -14,6 +14,7 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.brainstem.movies.BuildConfig.API_KEY
 import com.brainstem.movies.databinding.HomepageBinding
+import com.brainstem.movies.utils.CHECK_NETWORK
 import com.brainstem.movies.utils.LOAD_MORE_DATA
 import com.brainstem.movies.viewmodels.MovieViewModel
 import com.brainstem.movies.views.adapters.HomePageAdapter
@@ -43,20 +44,20 @@ class Homepage : Fragment(), OnMovieClickInterface {
         observeNetwork = ObserveNetworkState(requireContext())
         super.onViewCreated(view, savedInstanceState)
         setUpRecyclerView()
+        observeFromDatabase()
         observeNetwork.observe(this) {
             when (it) {
                 true -> {
                     binding.progressBar.visibility = View.INVISIBLE
                     binding.statusTv.visibility = View.INVISIBLE
                     observeFirstPageFromNetwork()
-                    observeFromDatabase()
                     loadMorePopularMoviesOnLastScroll()
                 }
                 false -> {
                     binding.apply{
+                        statusTv.text = CHECK_NETWORK
                         progressBar.visibility = View.VISIBLE
                         statusTv.visibility = View.VISIBLE
-                        observeFromDatabase()
                     }
                 }
             }
@@ -98,7 +99,7 @@ class Homepage : Fragment(), OnMovieClickInterface {
             else {
                 Toast.makeText(
                     requireContext(),
-                    LOAD_MORE_DATA,
+                    "Your database is empty, Switch on your internet to load more data",
                     Toast.LENGTH_SHORT).show()
             }
         })

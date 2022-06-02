@@ -8,6 +8,7 @@ import android.view.ViewGroup
 import com.bumptech.glide.Glide
 import com.brainstem.movies.utils.IMAGE_URL
 import com.brainstem.movies.databinding.MovieDetailsBinding
+import com.google.movies.utils.ObserveNetworkState
 import dagger.hilt.android.AndroidEntryPoint
 
 @AndroidEntryPoint
@@ -26,9 +27,7 @@ class MovieDetailsScreen : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-
         val bundle = arguments ?: return
-
         MovieDetailsScreenArgs.fromBundle(bundle).let { movieDetailsScreenArgs ->
             if (movieDetailsScreenArgs.popularMovie != null) {
                 binding.apply {

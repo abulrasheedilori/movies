@@ -43,14 +43,13 @@ class UpcomingMovie : Fragment(), OnMovieClickInterface {
         observeNetwork = ObserveNetworkState(requireContext())
         super.onViewCreated(view, savedInstanceState)
         setUpRecyclerView()
-//        observeFromDatabase()
+        observeFromDatabase()
         observeNetwork.observe(this) {
             when (it) {
                 true -> {
                     binding.progressBar.visibility = View.INVISIBLE
                     binding.statusTv.visibility = View.INVISIBLE
                     observeFirstPageFromNetwork()
-                    observeFromDatabase()
                     loadMoreUpcomingMoviesOnLastScroll()
                 }
                 false -> {
@@ -58,7 +57,6 @@ class UpcomingMovie : Fragment(), OnMovieClickInterface {
                         statusTv.text = CHECK_NETWORK
                         progressBar.visibility = View.VISIBLE
                         statusTv.visibility = View.VISIBLE
-                        observeFromDatabase()
                     }
                 }
             }

@@ -25,6 +25,8 @@ class MovieViewModel @Inject constructor(
     private var _totalPopularMoviesOnServer: MutableLiveData<Int> = MutableLiveData()
     var totalPopularMoviesOnServer: LiveData<Int> = _totalPopularMoviesOnServer
 
+    // do not implement auto-loading on scroll listener.
+    // Did only for popular movie screen
     private var _totalUpcomingMoviesOnServer: MutableLiveData<Int> = MutableLiveData()
     var totalUpcomingMoviesOnServer: LiveData<Int> = _totalUpcomingMoviesOnServer
 
