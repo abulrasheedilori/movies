@@ -11,7 +11,7 @@ import com.brainstem.movies.databinding.MovieRecyclerviewItemBinding
 class UpcomingMovieAdapter(
     private val onMovieClickItem: OnMovieClickInterface
 ): RecyclerView.Adapter<UpcomingMovieAdapter.UpcomingMovieViewHolder>() {
-    private var listOfUpcomingMovies: List<com.google.movies.models.upcoming_movies.Result> = listOf()
+    private var listOfUpcomingMovies: List<com.brainstem.movies.models.upcoming_movies.Result> = listOf()
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): UpcomingMovieViewHolder {
         val inflater = MovieRecyclerviewItemBinding.inflate(LayoutInflater.from(parent.context), parent, false)
@@ -30,7 +30,7 @@ class UpcomingMovieAdapter(
     }
 
     class UpcomingMovieViewHolder(private val binding: MovieRecyclerviewItemBinding):RecyclerView.ViewHolder(binding.root){
-        fun bind (movie: com.google.movies.models.upcoming_movies.Result){
+        fun bind (movie: com.brainstem.movies.models.upcoming_movies.Result){
             binding.apply {
                 Glide.with(rvItemImageView.context)
                     .load(IMAGE_URL + movie.posterPath)
