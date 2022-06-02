@@ -5,10 +5,15 @@
 **Movies** is an **android native application** that caches, fetches  and displays 
 list of movies data from TMDB on the homepage and onclick on each movies,
 it will fetch and display the details of each movies on a details screen. 
+
 All the latest technological tools and libraries were employed to build this
 app such as  room database, retrofit, dependency injection (Dagger Hilt), 
 network observation using RxJava (Live data), Courotine, Jetpack navigation components,
-espresso, junit, truth,  github, git action (continous integration) to mention a few.
+espresso, junit, truth,  github, to mention a few. 
+
+It was solely worked on by me so I 
+dont see the need for continous integration and deployment.
+
 This app is built to demonstrate expertise in these various libraries and technologies 
 for an assessment with google. 
 
