@@ -6,7 +6,7 @@
 list of movies data from TMDB on the homepage and onclick on each movies,
 it will fetch and display the details of each movies on a details screen. 
 All the latest technological tools and libraries were employed to build this
-app such as  room database, retrofit, dependency ijection (Dagger Hilt), 
+app such as  room database, retrofit, dependency injection (Dagger Hilt), 
 network observation using RxJava (Live data), Courotine, Jetpack navigation components,
 espresso, junit, truth,  github, git action (continous integration) to mention a few.
 This app is built to demonstrate expertise in these various libraries and technologies 
