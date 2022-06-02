@@ -5,11 +5,10 @@ import com.brainstem.movies.models.latest_movies.LatestMovie
 import com.brainstem.movies.models.popular_movies.PopularMovieModels
 import com.brainstem.movies.models.popular_movies.Result
 import com.brainstem.movies.models.upcoming_movies.UpcomingMoviesModel
-import com.brainstem.movies.repository.RepositoryInterface
-import com.brainstem.movies.repository.remote.GetMovieApi
 import com.brainstem.movies.repository.database.dao.LatestMovieDao
 import com.brainstem.movies.repository.database.dao.PopularMovieDao
 import com.brainstem.movies.repository.database.dao.UpcomingMovieDao
+import com.brainstem.movies.repository.remote.GetMovieApi
 import javax.inject.Inject
 
 class Repository @Inject constructor(
