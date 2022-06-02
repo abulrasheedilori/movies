@@ -96,8 +96,12 @@ It is a broad term but sticking to best software development practices helps alo
                       WISH TO ADD FEATURES : 
                       ---------------------
 I can always find improvement in all projects I have built everytime. But for this, 
-Wish I had time to add search bar and filters to the screens. But I will update it later
+Wish I had time to add search bar, filters  and more test coverage to the screens. But I will update it later
 for the sake of young developers who crave for step by step guide of implementing such. 
+
+* search bar
+* filter
+* more test coverage
 
                       -------------------
                       TECHNOLOGIES USED
