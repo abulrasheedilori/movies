@@ -113,30 +113,30 @@ Coroutine, Retrofit, Gson Converter, Gradle, Github etc
                   -------------------------------------
                   ASSUMPTIONS FOR THIS LIBRARY CHOICES
                   -------------------------------------
-**Android Studio SDk** is the fastest tool used to build the views and logic using 
+* **Android Studio SDk** is the fastest tool used to build the views and logic using 
 kotlin for android devices.
 
-**Android Jetpack Navigation Component**  is used to implement navigation, from simple 
+* **Android Jetpack Navigation Component**  is used to implement navigation, from simple 
 button clicks to more complex patterns, such as app bars and the navigation drawer.
 The Navigation component ensures a consistent and predictable user experience by a
 dhering to an established set of principles.
 
-**RxJava** RxJava is a Java library that allows **functional reactive programming** in 
+* **RxJava** RxJava is a Java library that allows **functional reactive programming** in 
 Android development by raising the level of abstraction around threading in order to
 simplify the implementation of complex concurrent behavior. LiveData was used to implement this.
 There is **flow** also which you can use. The official documentation is the best way to learn the
 latest best practices and learn more.
 
-**Dependency Injection (Dagger Hilt)** Hilt is a dependency injection library for Android that 
+* **Dependency Injection (Dagger Hilt)** Hilt is a dependency injection library for Android that 
 reduces the boilerplate of doing manual dependency injection in your project.
 
-**Hilt** provides a standard way to use DI in our application by providing containers for every 
+* **Hilt** provides a standard way to use DI in our application by providing containers for every 
 Android class in our project and managing their lifecycles automatically. It is built on top 
 of the popular **DI library Dagger** to benefit from the **compile-time correctness,** **runtime performance,**
 **scalability**, and **Android Studio support that Dagger provides.**
 You can see why I love Hilt
 
-**Room database** Room database is one of the caching mechanism to persist our data in android development.
+* **Room database** Room database is one of the caching mechanism to persist our data in android development.
 **The Room persistence library** provides an abstraction layer over SQLite to allow fluent database access
 while harnessing the full power of **SQLite.** 
 
@@ -154,16 +154,16 @@ In particular, Room provides the following benefits:
 NOTE: It is a recommended best practice to use room db in android instead of other SQLite APIs directly.
 --------------------------------------------------------------------------------------------------------
 
-**NETWORK OBSERVATION :** This is achieved using Rxjava (LiveData) to monitor our network in real time and 
+* **NETWORK OBSERVATION :** This is achieved using Rxjava (LiveData) to monitor our network in real time and 
 as such provides good UI and UX for our users.
 
 
-**Coroutine** is a **concurrency design pattern** that you can use on Android to simplify code that executes 
+* **Coroutine** is a **concurrency design pattern** that you can use on Android to simplify code that executes 
 asynchronously. Coroutines were added to Kotlin in version 1.3 and are based on established concepts from
 other languages. It aids to perform long operation off main thread ( so it doesnt block the main thread )
 and manages its own lifecycle itself.
 
-**Retrofit:** is used to call our data from the cloud.
+* **Retrofit:** is used to call our data from the cloud.
 
-**Gson Converter:** helps to convert the json response to kotlin-Java Object.
+* **Gson Converter:** helps to convert the json response to kotlin-Java Object.
 
