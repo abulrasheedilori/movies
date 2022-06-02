@@ -3,26 +3,63 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/nav_graph"
-    app:startDestination="@id/FirstFragment">
+    app:startDestination="@id/homepage">
 
     <fragment
-        android:id="@+id/FirstFragment"
-        android:name="com.brainstem.movies.FirstFragment"
-        android:label="@string/first_fragment_label"
-        tools:layout="@layout/fragment_first">
+        android:id="@+id/homepage"
+        android:name="com.google.movies.views.screens.Homepage"
+        android:label="Popular Movies"
+        tools:layout="@layout/homepage">
 
         <action
-            android:id="@+id/action_FirstFragment_to_SecondFragment"
-            app:destination="@id/SecondFragment" />
+            android:id="@+id/action_homePage_to_movieDetails"
+            app:destination="@id/movieDetails" />
+
     </fragment>
     <fragment
-        android:id="@+id/SecondFragment"
-        android:name="com.brainstem.movies.SecondFragment"
-        android:label="@string/second_fragment_label"
-        tools:layout="@layout/fragment_second">
+        android:id="@+id/movieDetails"
+        android:name="com.google.movies.views.screens.MovieDetailsScreen"
+        android:label="@string/movieDetails"
+        tools:layout="@layout/movie_details">
 
         <action
-            android:id="@+id/action_SecondFragment_to_FirstFragment"
-            app:destination="@id/FirstFragment" />
+            android:id="@+id/action_movieDetails_to_homepage"
+            app:destination="@id/homepage" />
+        <action
+            android:id="@+id/action_movieDetails_to_latestMovie"
+            app:destination="@id/latestMovie" />
+        <action
+            android:id="@+id/action_movieDetails_to_upcomingMovie"
+            app:destination="@id/upcomingMovie" />
+        <argument
+            android:name="popularMovie"
+            app:argType="com.google.movies.models.popular_movies.Result"
+            app:nullable="true" />
+        <argument
+            android:name="upcomingMovie"
+            app:argType="com.google.movies.models.upcoming_movies.Result"
+            app:nullable="true" />
+        <argument
+            android:name="latestMovie"
+            app:argType="com.google.movies.models.latest_movies.LatestMovie"
+            app:nullable="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/upcomingMovie"
+        android:name="com.google.movies.views.screens.UpcomingMovie"
+        android:label="Upcoming Movies"
+        tools:layout="@layout/fragment_upcoming_movie">
+        <action
+            android:id="@+id/action_upcomingMovie_to_movieDetails"
+            app:destination="@id/movieDetails" />
+    </fragment>
+    <fragment
+        android:id="@+id/latestMovie"
+        android:name="com.google.movies.views.screens.LatestMovie"
+        android:label="Latest Movie"
+        tools:layout="@layout/fragment_latest_movie">
+        <action
+            android:id="@+id/action_latestMovie_to_movieDetails"
+            app:destination="@id/movieDetails" />
     </fragment>
 </navigation>

@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Movies</string>
+    <string name="app_name">Umba Movie</string>
     <string name="action_settings">Settings</string>
     <!-- Strings used for fragments for navigation -->
     <string name="homepage">Homepage</string>
@@ -37,6 +37,6 @@
     <string name="_false">False</string>
     <string name="en">En</string>
     <string name="_267484">267484</string>
-    <string name="_26_7_2020">26–7–2020</string>
+    <string name="_26_7_2020">26–7-2020</string>
     <string name="_8_3">8.3</string>
 </resources>
