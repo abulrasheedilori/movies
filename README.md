@@ -98,14 +98,13 @@ REASONS FOR CHOOSING MVVM:->
                           -----------
                           CHALLENGES : 
                           -----------
-Challenges faced during this little implementation is Scalability.
+Challenges faced during this little implementation is improving app performance. This was overcome by following best development practices.
 
                       ----------------------
                       WISH TO ADD FEATURES : 
                       ---------------------
-I can always find improvement in all projects I have built everytime. But for this, 
-Wish I had time to add search bar, filters  and more test coverage to the screens. But I will update it later
-for the sake of young developers who crave for step by step guide of implementing such. 
+I can always find improvement in all projects I have built everytime as I am very creative. But for this, 
+These are;  
 
 * search bar
 * filter
