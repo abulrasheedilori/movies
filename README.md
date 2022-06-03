@@ -84,13 +84,21 @@ MOVIE DETAILS
                         -------------
                         ARCHITECTURE: 
                         -------------
-Model View ViewModel, MVVM - Google recommendation but I've grown to love it better than MVC, MVP
+Model View ViewModel, MVVM - Google recommendation but I've grown to love it better than MVC, MVP.
+
+REASONS FOR CHOOSING MVVM:-> 
+ * helps to reduce dependencies on Android classes.
+ * protects data from android lifecycle.
+ * helps to create well-defined boundaries of responsibility between various modules in your app.
+ * helps to expose as little as much data that is needed from each module.
+ * aids to focus on the unique core of your app so it stands out from other apps.
+ * allows testing each part of the app in isolation
+ * persist as much data as needed to improve app performances.
 
                           -----------
                           CHALLENGES : 
                           -----------
 Challenges faced during this little implementation is Scalability.
-It is a broad term but sticking to best software development practices helps alot
 
                       ----------------------
                       WISH TO ADD FEATURES : 
